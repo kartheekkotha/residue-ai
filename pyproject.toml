@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "residue-ai"
+version = "0.1.0"
+description = "AI-driven cross-tool task reminder. Your AI remembers what you forgot."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["ai", "mcp", "tasks", "reminder", "claude", "cursor", "gemini"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "click>=8.1",
+    "mcp>=1.0",
+]
+
+[project.scripts]
+residue = "residue.__main__:cli"
+residue-list = "residue.__main__:list_tasks"
+residue-add = "residue.__main__:add"
+residue-drop = "residue.__main__:delete"
+residue-edit = "residue.__main__:edit"
+residue-snooze = "residue.__main__:snooze"
+residue-notify = "residue.__main__:notify"
+
+[project.urls]
+Homepage = "https://github.com/kartheekkotha/residue"
+Repository = "https://github.com/kartheekkotha/residue"
+
+[tool.hatch.build.targets.wheel]
+packages = ["residue"]
