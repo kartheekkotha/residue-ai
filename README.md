@@ -57,8 +57,7 @@ The next day, when you open your IDE, the AI boots up and reads its pending task
 
 ## Install
 
-> **Note:** residue is currently in early development and not yet published to PyPI.
-> Install directly from GitHub below.
+> **Note:** residue is now available on PyPI!
 
 ### Requirements
 - Python 3.10+
@@ -69,17 +68,17 @@ The next day, when you open your IDE, the AI boots up and reads its pending task
 We recommend using `pipx` to install `residue` globally. This ensures the CLI is available everywhere and avoids virtual environment path issues.
 
 ```bash
-pipx install git+https://github.com/kartheekkotha/residue.git
+pipx install residue-ai
 ```
 
 Alternatively, you can install it into a specific environment:
 
 ```bash
 # Using standard pip
-pip install git+https://github.com/kartheekkotha/residue.git
+pip install residue-ai
 
 # Using uv
-uv pip install git+https://github.com/kartheekkotha/residue.git
+uv pip install residue-ai
 ```
 
 Or clone and install in editable mode (for contributors):

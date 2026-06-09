@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "residue-ai"
-version = "0.1.0"
+version = "0.1.1"
 description = "AI-driven cross-tool task reminder. Your AI remembers what you forgot."
 readme = "README.md"
 license = { text = "MIT" }
